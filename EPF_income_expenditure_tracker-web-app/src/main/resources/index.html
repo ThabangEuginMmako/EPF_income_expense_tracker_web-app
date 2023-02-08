@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <title>Customer Financial Data</title>
+  <!-- Include CSS link for styling -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Include XLSX library for reading Excel files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.5/xlsx.full.min.js"></script>
+
+  <!-- Include CanvasJS library for rendering charts -->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+<body>
+<h1>Enter Customer Information</h1>
+<form>
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required>
+  <br><br>
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required>
+  <br><br>
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required>
+  <br><br>
+  <label for="excelFile">Upload Excel File:</label>
+  <input type="file" id="excelFile" name="excelFile" accept=".xlsx" required>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+</body>
+<script src="app.js"></script>
+</html>
